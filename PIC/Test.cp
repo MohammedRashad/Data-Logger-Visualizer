@@ -78,7 +78,6 @@ void main() {
  UART1_Write(t1);
  Lcd_Out(1, 11, Ltrim(mytext));
  ByteToStr(rh1, mytext);
- UART1_Write(rh1);
  Lcd_Out(2, 11, Ltrim(mytext));
  } else {
  Lcd_Cmd(_LCD_CURSOR_OFF);
@@ -94,6 +93,6 @@ void main() {
  Lcd_Out(2, 1, text);
  UART1_Write(0);
  }
- delay_ms(2000);
+ delay_ms(500);
  }
 }

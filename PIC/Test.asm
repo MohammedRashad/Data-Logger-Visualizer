@@ -313,11 +313,7 @@ L__main33:
 	MOVLW      _mytext+0
 	MOVWF      FARG_ByteToStr_output+0
 	CALL       _ByteToStr+0
-;Test.c,80 :: 		UART1_Write(rh1);
-	MOVF       _rh1+0, 0
-	MOVWF      FARG_UART1_Write_data_+0
-	CALL       _UART1_Write+0
-;Test.c,81 :: 		Lcd_Out(2, 11, Ltrim(mytext));
+;Test.c,80 :: 		Lcd_Out(2, 11, Ltrim(mytext));
 	MOVLW      _mytext+0
 	MOVWF      FARG_Ltrim_string+0
 	CALL       _Ltrim+0
@@ -328,21 +324,21 @@ L__main33:
 	MOVLW      11
 	MOVWF      FARG_Lcd_Out_column+0
 	CALL       _Lcd_Out+0
-;Test.c,82 :: 		} else {
+;Test.c,81 :: 		} else {
 	GOTO       L_main22
 L_main21:
-;Test.c,83 :: 		Lcd_Cmd(_LCD_CURSOR_OFF); // cursor off
+;Test.c,82 :: 		Lcd_Cmd(_LCD_CURSOR_OFF); // cursor off
 	MOVLW      12
 	MOVWF      FARG_Lcd_Cmd_out_char+0
 	CALL       _Lcd_Cmd+0
-;Test.c,84 :: 		Lcd_Cmd(_LCD_CLEAR); // clear LCD
+;Test.c,83 :: 		Lcd_Cmd(_LCD_CLEAR); // clear LCD
 	MOVLW      1
 	MOVWF      FARG_Lcd_Cmd_out_char+0
 	CALL       _Lcd_Cmd+0
-;Test.c,85 :: 		text = "Check sum error";
+;Test.c,84 :: 		text = "Check sum error";
 	MOVLW      ?lstr3_Test+0
 	MOVWF      _text+0
-;Test.c,86 :: 		Lcd_Out(1, 1, text);
+;Test.c,85 :: 		Lcd_Out(1, 1, text);
 	MOVLW      1
 	MOVWF      FARG_Lcd_Out_row+0
 	MOVLW      1
@@ -350,18 +346,18 @@ L_main21:
 	MOVF       _text+0, 0
 	MOVWF      FARG_Lcd_Out_text+0
 	CALL       _Lcd_Out+0
-;Test.c,87 :: 		UART1_Write(0);
+;Test.c,86 :: 		UART1_Write(0);
 	CLRF       FARG_UART1_Write_data_+0
 	CALL       _UART1_Write+0
-;Test.c,88 :: 		}
+;Test.c,87 :: 		}
 L_main22:
-;Test.c,89 :: 		} else {
+;Test.c,88 :: 		} else {
 	GOTO       L_main23
 L_main20:
-;Test.c,90 :: 		text = "No response";
+;Test.c,89 :: 		text = "No response";
 	MOVLW      ?lstr4_Test+0
 	MOVWF      _text+0
-;Test.c,91 :: 		Lcd_Out(1, 3, text);
+;Test.c,90 :: 		Lcd_Out(1, 3, text);
 	MOVLW      1
 	MOVWF      FARG_Lcd_Out_row+0
 	MOVLW      3
@@ -369,10 +365,10 @@ L_main20:
 	MOVF       _text+0, 0
 	MOVWF      FARG_Lcd_Out_text+0
 	CALL       _Lcd_Out+0
-;Test.c,92 :: 		text = "from the sensor";
+;Test.c,91 :: 		text = "from the sensor";
 	MOVLW      ?lstr5_Test+0
 	MOVWF      _text+0
-;Test.c,93 :: 		Lcd_Out(2, 1, text);
+;Test.c,92 :: 		Lcd_Out(2, 1, text);
 	MOVLW      2
 	MOVWF      FARG_Lcd_Out_row+0
 	MOVLW      1
@@ -380,17 +376,17 @@ L_main20:
 	MOVF       _text+0, 0
 	MOVWF      FARG_Lcd_Out_text+0
 	CALL       _Lcd_Out+0
-;Test.c,94 :: 		UART1_Write(0);
+;Test.c,93 :: 		UART1_Write(0);
 	CLRF       FARG_UART1_Write_data_+0
 	CALL       _UART1_Write+0
-;Test.c,95 :: 		}
+;Test.c,94 :: 		}
 L_main23:
-;Test.c,96 :: 		delay_ms(2000);
-	MOVLW      31
+;Test.c,95 :: 		delay_ms(500);
+	MOVLW      8
 	MOVWF      R11+0
-	MOVLW      113
+	MOVLW      157
 	MOVWF      R12+0
-	MOVLW      30
+	MOVLW      5
 	MOVWF      R13+0
 L_main24:
 	DECFSZ     R13+0, 1
@@ -400,9 +396,10 @@ L_main24:
 	DECFSZ     R11+0, 1
 	GOTO       L_main24
 	NOP
-;Test.c,97 :: 		}
+	NOP
+;Test.c,96 :: 		}
 	GOTO       L_main18
-;Test.c,98 :: 		}
+;Test.c,97 :: 		}
 L_end_main:
 	GOTO       $+0
 ; end of _main

@@ -2,11 +2,11 @@
 hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
 diagnostics: 0	122	Compilation Started	Test.c
 warning: 52	1509	Generated baud rate is 9615 bps (error = 0.16 percent)	Test.c
-diagnostics: 98	123	Compiled Successfully	Test.c
-diagnostics: 0	127	All files Compiled in 248 ms	 
+diagnostics: 97	123	Compiled Successfully	Test.c
+diagnostics: 0	127	All files Compiled in 378 ms	 
 hint: 0	1144	Used RAM (bytes): 91 (26%)  Free RAM (bytes): 261 (74%)	Used RAM (bytes): 91 (26%)  Free RAM (bytes): 261 (74%)
-hint: 0	1144	Used ROM (program words): 839 (10%)  Free ROM (program words): 7353 (90%)	Used ROM (program words): 839 (10%)  Free ROM (program words): 7353 (90%)
+hint: 0	1144	Used ROM (program words): 834 (10%)  Free ROM (program words): 7358 (90%)	Used ROM (program words): 834 (10%)  Free ROM (program words): 7358 (90%)
 diagnostics: 0	125	Project Linked Successfully	Test.mcppi
-diagnostics: 0	128	Linked in 284 ms	 
-diagnostics: 0	129	Project 'Test.mcppi' completed: 1256 ms	 
-diagnostics: 0	103	Finished successfully: 03 Jun 2017, 05:39:15	Test.mcppi
+diagnostics: 0	128	Linked in 410 ms	 
+diagnostics: 0	129	Project 'Test.mcppi' completed: 1003 ms	 
+diagnostics: 0	103	Finished successfully: 03 Jun 2017, 06:01:45	Test.mcppi
