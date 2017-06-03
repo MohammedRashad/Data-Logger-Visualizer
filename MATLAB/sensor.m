@@ -29,7 +29,8 @@ axis([0 60 10 40]);
 %%%%%%%%%%%%%%%%%
 
 fileID = fopen('log.txt','w');
-fprintf(fileID,'Temprature Data');
+fprintf(fileID,'Temprature Data\n');
+fprintf(fileID,'------------------\n');
 fprintf(fileID,data);
 
 
