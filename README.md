@@ -23,14 +23,15 @@ This embedded application is used to record the data in real time using these se
 
 - MikroC
 - pk2cmd
-- Matlab 2016a / GNU Octave
+- Matlab / GNU Octave
 
 # Features
 
-- Gives a reading every second
+- Real-time readings from pic to matlab
 - Displays results in LCD (real-time)
-- Plotting in matlab (not real-time)
+- Real-time Plotting in matlab
 - Transfer to PC using UART protocol
+- PIC 16F / 18F Compatible
 
 # License 
 
